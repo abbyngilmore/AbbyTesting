@@ -1,1 +1,1 @@
-write-out "Hello World"
+write-host "Hello World"
