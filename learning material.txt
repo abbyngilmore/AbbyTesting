@@ -1,0 +1,652 @@
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ who am i 
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ whoami
+E0535814
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git status
+On branch Abby-Feature-Test
+Your branch is up to date with 'origin/Abby-Feature-Test'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git add .
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git commit -m "uploading a new change"
+[Abby-Feature-Test 2d71da8] uploading a new change
+ 1 file changed, 1 insertion(+)
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git branch
+* Abby-Feature-Test
+  main
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git push origin Abby-Feature-Test 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 25.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abbyngilmore/AbbyTesting.git
+   b29e3a3..2d71da8  Abby-Feature-Test -> Abby-Feature-Test
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git request-pull https://github.com/abbyngilmore/AbbyTesting.git master:Abby-Feature-Test
+fatal: Not a valid revision: https://github.com/abbyngilmore/AbbyTesting.git
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git log --graph
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)        
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+|
+:...skipping...
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)        
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+|
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+|
+|     testing comment commit change
+|
+* commit 376cd06287c96831c06e2d0015345b30cdd8e6af (origin/main, origin/HEAD, main)
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:58:23 2022 -0400
+:...skipping...
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+|
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+|
+|     testing comment commit change
+| 
+* commit 376cd06287c96831c06e2d0015345b30cdd8e6af (origin/main, origin/HEAD, main)
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:58:23 2022 -0400
+|
+|     Update test.ps1
+|
+* commit 3b85c2246e076e4991b77acc75088212e982930d
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+HELP -- Press RETURN for more, or q when done...skipping...
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+|
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+| 
+|     testing comment commit change
+|
+* commit 376cd06287c96831c06e2d0015345b30cdd8e6af (origin/main, origin/HEAD, main)
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:58:23 2022 -0400
+|
+|     Update test.ps1
+|
+* commit 3b85c2246e076e4991b77acc75088212e982930d
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git request-pull 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9  https://github.com/abbyngilmore/AbbyTesting.git master:Abby-Feature-Test
+fatal: Not a valid revision: master
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 633 bytes | 18.00 KiB/s, done.
+From https://github.com/abbyngilmore/AbbyTesting
+   376cd06..d123c3e  main       -> origin/main
+Already up to date.
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git log--graph 
+git: 'log--graph' is not a git command. See 'git --help'.
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ git log --graph
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+|
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+|
+|     testing comment commit change
+|
+* commit 376cd06287c96831c06e2d0015345b30cdd8e6af (main)
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:58:23 2022 -0400
+|
+|     Update test.ps1
+|
+* commit 3b85c2246e076e4991b77acc75088212e982930d
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:49:31 2022 -0400
+|
+|     Create test.ps1
+|
+* commit 461f8a6b523fbfdc4d9f4dd8ecf8a8439dc610b3
+  Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+  Date:   Wed Apr 20 15:44:06 2022 -0400
+
+      Initial commit
+...skipping...
+* commit 2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9 (HEAD -> Abby-Feature-Test, origin/Abby-Feature-Test)        
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Tue May 24 14:17:54 2022 -0400
+| 
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+|
+|     uploading a new change
+|
+* commit b29e3a3cba6ea9429c581017d6e21ab28d7548e3
+| Author: Abby Gilmore <abbyngilmore@eaton.com>
+| Date:   Mon May 23 22:54:58 2022 -0400
+|
+|     testing comment commit change
+|
+* commit 376cd06287c96831c06e2d0015345b30cdd8e6af (main)
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:58:23 2022 -0400
+|
+|     Update test.ps1
+|
+* commit 3b85c2246e076e4991b77acc75088212e982930d
+| Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+| Date:   Wed Apr 20 15:49:31 2022 -0400
+|
+|     Create test.ps1
+|
+* commit 461f8a6b523fbfdc4d9f4dd8ecf8a8439dc610b3
+  Author: abbyngilmore <88337530+abbyngilmore@users.noreply.github.com>
+  Date:   Wed Apr 20 15:44:06 2022 -0400
+
+      Initial commit
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ curl \
+>   -H "Accept: application/vnd.github.v3+json" \
+>   https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1
+{
+  "url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1",
+  "id": 946001984,
+  "node_id": "PR_kwDOHNYRaM44YthA",
+  "html_url": "https://github.com/abbyngilmore/AbbyTesting/pull/1",
+  "diff_url": "https://github.com/abbyngilmore/AbbyTesting/pull/1.diff",
+  "patch_url": "https://github.com/abbyngilmore/AbbyTesting/pull/1.patch",
+  "issue_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/1",
+  "number": 1,
+  "state": "closed",
+  "locked": false,
+  "title": "Abby feature test",
+  "user": {
+    "login": "abbyngilmore",
+    "id": 88337530,
+    "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/abbyngilmore",
+    "html_url": "https://github.com/abbyngilmore",
+    "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+    "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+    "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+    "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+    "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+    "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "body": "testing merge",
+  "created_at": "2022-05-24T18:31:36Z",
+  "updated_at": "2022-05-24T18:32:29Z",
+  "closed_at": "2022-05-24T18:32:29Z",
+  "merged_at": "2022-05-24T18:32:29Z",
+  "merge_commit_sha": "d123c3ee71b79bb63cdd06bdf61c1ca55590c50a",
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "requested_reviewers": [
+
+  ],
+  "requested_teams": [
+
+  ],
+  "labels": [
+
+  ],
+  "milestone": null,
+  "draft": false,
+  "commits_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1/commits",
+  "review_comments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1/comments",
+  "review_comment_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/comments{/number}",       
+  "comments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/1/comments",
+  "statuses_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/statuses/2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9",
+  "head": {
+    "label": "abbyngilmore:Abby-Feature-Test",
+    "ref": "Abby-Feature-Test",
+    "sha": "2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9",
+    "user": {
+      "login": "abbyngilmore",
+      "id": 88337530,
+      "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abbyngilmore",
+      "html_url": "https://github.com/abbyngilmore",
+      "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+      "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+      "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+      "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+      "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 483791208,
+      "node_id": "R_kgDOHNYRaA",
+      "name": "AbbyTesting",
+      "full_name": "abbyngilmore/AbbyTesting",
+      "private": false,
+      "owner": {
+        "login": "abbyngilmore",
+        "id": 88337530,
+        "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/abbyngilmore",
+        "html_url": "https://github.com/abbyngilmore",
+        "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+        "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+        "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+        "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+        "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+        "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/abbyngilmore/AbbyTesting",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/abbyngilmore/AbbyTesting",
+      "forks_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/forks",
+      "keys_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/teams",
+      "hooks_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/hooks",
+      "issue_events_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/events",
+      "assignees_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/tags",
+      "blobs_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/languages",
+      "stargazers_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/stargazers",
+      "contributors_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/contributors",
+      "subscribers_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/subscribers",
+      "subscription_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/subscription",
+      "commits_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/comments{/number}",   
+      "contents_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/merges",
+      "archive_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/downloads",
+      "issues_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/labels{/name}",
+      "releases_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/deployments",
+      "created_at": "2022-04-20T19:44:06Z",
+      "updated_at": "2022-04-20T19:49:34Z",
+      "pushed_at": "2022-05-24T18:32:28Z",
+      "git_url": "git://github.com/abbyngilmore/AbbyTesting.git",
+      "ssh_url": "git@github.com:abbyngilmore/AbbyTesting.git",
+      "clone_url": "https://github.com/abbyngilmore/AbbyTesting.git",
+      "svn_url": "https://github.com/abbyngilmore/AbbyTesting",
+      "homepage": null,
+      "size": 2,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "PowerShell",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "topics": [
+
+      ],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main"
+    }
+  },
+  "base": {
+    "label": "abbyngilmore:main",
+    "ref": "main",
+    "sha": "376cd06287c96831c06e2d0015345b30cdd8e6af",
+    "user": {
+      "login": "abbyngilmore",
+      "id": 88337530,
+      "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abbyngilmore",
+      "html_url": "https://github.com/abbyngilmore",
+      "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+      "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+      "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+      "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+      "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "repo": {
+      "id": 483791208,
+      "node_id": "R_kgDOHNYRaA",
+      "name": "AbbyTesting",
+      "full_name": "abbyngilmore/AbbyTesting",
+      "private": false,
+      "owner": {
+        "login": "abbyngilmore",
+        "id": 88337530,
+        "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/abbyngilmore",
+        "html_url": "https://github.com/abbyngilmore",
+        "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+        "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+        "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+        "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+        "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+        "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/abbyngilmore/AbbyTesting",
+      "description": null,
+      "fork": false,
+      "url": "https://api.github.com/repos/abbyngilmore/AbbyTesting",
+      "forks_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/forks",
+      "keys_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/teams",
+      "hooks_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/hooks",
+      "issue_events_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/events{/number}",      
+      "events_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/events",
+      "assignees_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/tags",
+      "blobs_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/languages",
+      "stargazers_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/stargazers",
+      "contributors_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/contributors",
+      "subscribers_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/subscribers",
+      "subscription_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/subscription",
+      "commits_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/comments{/number}",   
+      "contents_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/merges",
+      "archive_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/downloads",
+      "issues_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/labels{/name}",
+      "releases_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/abbyngilmore/AbbyTesting/deployments",
+      "created_at": "2022-04-20T19:44:06Z",
+      "updated_at": "2022-04-20T19:49:34Z",
+      "pushed_at": "2022-05-24T18:32:28Z",
+      "git_url": "git://github.com/abbyngilmore/AbbyTesting.git",
+      "ssh_url": "git@github.com:abbyngilmore/AbbyTesting.git",
+      "clone_url": "https://github.com/abbyngilmore/AbbyTesting.git",
+      "svn_url": "https://github.com/abbyngilmore/AbbyTesting",
+      "homepage": null,
+      "size": 2,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "PowerShell",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "topics": [
+
+      ],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main"
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1"
+    },
+    "html": {
+      "href": "https://github.com/abbyngilmore/AbbyTesting/pull/1"
+    },
+    "issue": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/1"
+    },
+    "comments": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/issues/1/comments"
+    },
+    "review_comments": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1/comments"
+    },
+    "review_comment": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/comments{/number}"
+    },
+    "commits": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1/commits"
+    },
+    "statuses": {
+      "href": "https://api.github.com/repos/abbyngilmore/AbbyTesting/statuses/2d71da8d7db2ccbbd7583ef10cdb12ed2501bfe9"
+    }
+  },
+  "author_association": "OWNER",
+  "auto_merge": null,
+  "active_lock_reason": null,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+    "login": "abbyngilmore",
+    "id": 88337530,
+    "node_id": "MDQ6VXNlcjg4MzM3NTMw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88337530?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/abbyngilmore",
+    "html_url": "https://github.com/abbyngilmore",
+    "followers_url": "https://api.github.com/users/abbyngilmore/followers",
+    "following_url": "https://api.github.com/users/abbyngilmore/following{/other_user}",
+    "gists_url": "https://api.github.com/users/abbyngilmore/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/abbyngilmore/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/abbyngilmore/subscriptions",
+    "organizations_url": "https://api.github.com/users/abbyngilmore/orgs",
+    "repos_url": "https://api.github.com/users/abbyngilmore/repos",
+    "events_url": "https://api.github.com/users/abbyngilmore/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/abbyngilmore/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": false,
+  "commits": 2,
+  "additions": 2,
+  "deletions": 0,
+  "changed_files": 1
+}
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$ curl   -H "Accept: application/vnd.github.v3+json"   https://api.github.com/repos/abbyngilmore/AbbyTesting/pulls/1 | grep body
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  "body": "testing merge",
+05                                                                          05
+05
+
+E0535814@USBEAWHP6122082 MINGW64 ~/Documents/CardinalTest (Abby-Feature-Test)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
